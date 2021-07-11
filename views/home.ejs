@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Human - Dog Age</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        h1{
+            color: blanchedalmond;
+            font-size: 3.5rem;
+            font-style: italic;
+        }
+        h3{
+            color: lightskyblue;
+            font-size: 2rem;
+            font-style: italic;
+        }
+        .input{
+            text-align: center;
+        }
+        input{
+           
+            padding: 12px;
+            border-radius: 4px;
+            width: 250px;
+            border: none;
+        }
+        button{
+            height: 40px;
+            border: none;
+            background-color:lightcoral;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="input">
+        <h1>Check Your Age in Dog years</h1>
+        <form method="POST">
+            <input type="text" placeholder="Enter age" name="n1">
+            <button type="submit" name="submit1" formaction="see">See your Age</button>
+            <br><br>
+            <div>
+                <h3>
+                    Your age in dog years : <%= dog_age %>
+                </h3>
+            </div>
+            <button type="submit" name="clr" formaction="reset">Clear</button>
+        </form>
+    </div>
+    
+</body>
+</html>
