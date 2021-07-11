@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const port = 5000;
+const hostname = '0.0.0.0';
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -33,7 +34,7 @@ app.post("/reset",function(req,res){
    
 });
 
-app.listen(port,function(err){
+app.listen(port,hostname,function(err){
     if(err){console.log('Error in running the server', err);}
     console.log('Server is running on port :',port);
 });
